@@ -49,3 +49,7 @@ const numbers = [1, 2, 3];
 const numbers2 = [4, 5, 6];
 console.log(numbers);       // [1, 2,]()
 
+
+
+
+

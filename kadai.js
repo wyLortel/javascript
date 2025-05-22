@@ -13,12 +13,13 @@ function classify(score) {
 
 function average(arr) {
   let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum = sum + arr[i]; // 또는 sum += arr[i];
+  for (const value of arr) {
+    sum += value;
   }
-  let avg = sum / arr.length;
+  const avg = sum / arr.length;
   return avg;
 }
+
 
 let scores = [92, 85, 34, 58, 90, 61, 70, 45, 99];
 
@@ -29,10 +30,12 @@ const categorizedScores = {
   "미흡": []
 };
 
-scores.forEach(score => {
+
+for (const score of scores) {
   const category = classify(score);
   categorizedScores[category].push(score);
-});
+}
+
 
 for (const category in categorizedScores) {
   const list = categorizedScores[category];
