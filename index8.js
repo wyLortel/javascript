@@ -34,6 +34,3 @@ const hello = () => {
 hello(); 
 
 
-const sum = (a, b) => {
-  return a + b;
-};

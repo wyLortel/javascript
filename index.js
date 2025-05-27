@@ -1,11 +1,9 @@
-let hi = "정우영";
-hi = "안녕하세요 우영님"
+const { createElement } = require("react");
 
-const hello = "안녕하세여";
-// hello = 123123;
+const title = document.querySelector(`h2`);
+title.innerText = "안녕하세요!";
+title.style.color = `blue`;
 
-console.log(hi)
-console.log(hello)
-
-var abc = 123;
-var abc = 456;
+const title1 = document.createElement('h1');
+title.innerText = "새로운 친구에여"
+title.style.color = `red`
