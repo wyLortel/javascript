@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button id="decrease">감소</button>
+    <button id="increase">증가</button>
+    <script>
+        const h1E1 = document.querySelector("h1")
+        const decreaseBtnE1 = document.querySelector("#decrease")
+        const increaseBtnE1 = document.querySelector("#increase")
+
+        decreaseBtnE1.addEventListener("click" , function() {
+            const prevNum = Number(h1E1.innerText);
+            const currentNum = prevNum -1;
+            h1E1.innerText = currentNum;
+        });
+
+        increaseBtnE1.addEventListener("click", function () {
+            const prevNum = Number(h1E1.innerText);
+            const currentNum = prevNum + 1;
+            h1E1.innerText = currentNum;
+        });
+
+
+
+    </script>
+</body>
+</html>
